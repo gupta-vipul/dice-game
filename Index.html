@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./scripts/scripts.js" defer></script>
+</head>
+<body>
+    <nav id="nav-bar">
+        <div id="logo">Dice<br>Game</div>
+        <div class="scorecontainer">
+            <div id="score">0</div>
+            <div>Score</div>
+        </div>
+    </nav>
+    <section class="gameboard container">
+        <div class="br-1 leftcontainer">
+            <div>Please select a number</div>
+            <div id="numberstile">
+            <div class="tile" id="1">1</div>
+            <div class="tile" id="2">2</div>
+            <div class="tile" id="3">3</div>
+            <div class="tile" id="4">4</div>
+            <div class="tile" id="5">5</div>
+            <div class="tile" id="6">6</div>
+            </div>
+            <div id="error"></div>
+        </div>
+        <div class="br-1 dice-box">
+            <img src="./images/Dice-1.jpg" id="dice-image" alt="dice-image">
+            <div>Click to roll dice... </div>
+        </div>
+        <div id="rules">
+            <h3>Rules</h3>
+            <ol>
+                <li>Hi Player, Here are few rules to begin with..</li>
+                <li>First you need to select one number from the number button.</li>
+                <li>Then, click on the dice.</li>
+                <li>If your selected number from step-2 & the number displayed on the Dice are same then you get 20(+20) points.</li>
+                <li>If not you loss 5(-5) points.</li>
+            </ol>
+            <em>I hope you like the game, Happy playing...</em>
+
+            <button id="reset">Reset</button>
+        </div>
+    </section>
+    <footer>&copy;2023 Dice Games, Made by <span>Vipul Gupta</span></footer>
+</body>
+</html>
