@@ -1,19 +1,24 @@
 let SCORE = 0;
 let selectedNumber;
+let flag = false;
 const numbers = document.getElementById('numberstile');
 const errormessage = document.getElementById("error");
 const scoreBoard = document.getElementById('score');
 const resetBtn = document.getElementById("reset");
 
 numbers.addEventListener('click', (e)=>{
-    if(!isNaN(e.target.id))
+    flag = true;
+    if(!isNaN(e.target.id)){
         selectedNumber = e.target.id;
-
-    numbers.children[selectedNumber - 1].classList.add('clicked');
+    }
+    if(flag){
+        numbers.children[selectedNumber - 1].classList.add('clicked');
+        flag = false;
+    }
 
     errormessage.classList.remove('errorMessage');
     errormessage.textContent = "";
-})
+});
 
 const dice = document.getElementById("dice-image");
 dice.addEventListener('click', (e)=>{
